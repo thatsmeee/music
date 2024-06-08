@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download File</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'music/Ultra Vuk - Slowed+Reverb.mp3';  // Укажите здесь путь к вашему файлу
+            link.download = 'Ultra Vuk - Slowed+Reverb.mp3';  // Укажите имя файла для загрузки
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+</html>
